@@ -3,3 +3,66 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.useline-3{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  min-height: 63px;
+}
+
+/* Brand logo */
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.dealin .logos {
+  overflow: hidden;
+  padding: 60px 0;
+  background: white;
+  white-space: nowrap;
+  position: relative;
+}
+
+.dealin .logos:before, .logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.dealin .logos:before {
+  left: 0;
+  background: linear-gradient(to left, #ffffff00, white);
+}
+
+.dealin .logos:after {
+  right: 0;
+  background: linear-gradient(to right, #ffffff00, white);
+}
+
+.dealin .logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.dealin .logos-slide {
+  animation: scroll-l 30s linear infinite;
+  display: flex;
+}
+
+.dealin .logos-slide img {
+  height: 50px;
+  margin: 0 40px;
+}
+@keyframes scroll-l{0%{transform:translateX(0);}
+100%{transform:translateX(calc(-250px * 7));}}
