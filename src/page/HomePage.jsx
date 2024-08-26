@@ -2,6 +2,8 @@ import React from 'react'
 import HeroSection from '../component/home/HeroSection'
 import Deals from '../component/home/Deals'
 import Services from '../component/home/Services'
+import Products from '../component/home/Products'
+import PaymentMode from '../component/home/PaymentMode'
 
 const HomePage = () => {
   return (
@@ -9,6 +11,8 @@ const HomePage = () => {
       <HeroSection />
       <Deals />
       <Services />
+      <Products />
+      <PaymentMode />
     </div>
   )
 }

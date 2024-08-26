@@ -52,7 +52,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <p class="fw-bold mb-2"><span class="count me-2">2278</span> Google Reviews</p>
+      <p className="fw-bold mb-2"><span className="count me-2">2278</span> Google Reviews</p>
       <div className="relative overflow-x-hidden">
         <div className="flex overflow-x-scroll scroll-smooth gap-5" >
           {

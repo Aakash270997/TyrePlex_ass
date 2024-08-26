@@ -1,13 +1,6 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 
 const Deals = () => {
-  // const sliderRef = useRef();
-
-  // useEffect(() => {
-  //   const slider = sliderRef.current;
-  //   const clone = slider.cloneNode(true);
-  //   slider.appendChild(clone);
-  // }, []);
 
   const brands = ["MRF", "CEAT", "Goodyear", "Apollo", "Bridgestone", "JK Tyre", "Michelin", "Pirelli", "Yokohama", "TVS Eurogrip", "Continental", "Hankook", "Ralco"];
 

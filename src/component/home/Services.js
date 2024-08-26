@@ -27,10 +27,10 @@ function Services() {
   return (
     <div className="bg-white shadow p-4 mt-4 dealin">
       <div className="container mx-auto">
-      <h3 class="text-lg font-bold mb-2">Services offered by this dealer</h3>
+      <h3 className="text-lg font-bold mb-2">Services offered by this dealer</h3>
         <div className="flex gap-3">
-          {services.map((service, index) => (
-            <ServiceCard key={index} {...service} />
+          {services.map((service, i) => (
+            <ServiceCard key={i} {...service} />
           ))}
         </div>
       </div>

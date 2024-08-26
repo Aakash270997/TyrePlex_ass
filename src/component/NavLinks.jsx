@@ -17,11 +17,31 @@ const NavLinks = () => {
         {
           text: "MRF Tyres",
           link: "#"
-        }
+        },
+        {
+          text: "CEAT Tyres",
+          link: "#"
+        },
+        {
+          text: "Goodyear Tyres",
+          link: "#"
+        },
+        {
+          text: "Apollo Tyres",
+          link: "#"
+        },
+        {
+          text: "Bridgestone Tyres",
+          link: "#"
+        },
+        {
+          text: "JK Tyres",
+          link: "#"
+        },
       ]
     },
     {
-      text: "Car Tyres",
+      text: "Bike Tyres",
       link: "#",
       submenu: [
         {
@@ -29,16 +49,37 @@ const NavLinks = () => {
           link: "#"
         }
       ]
-    }
+    },
+    {
+      text: "Tyre Pressure",
+      link: "#",
+      submenu: [
+        {
+          text: "MRF Tyres",
+          link: "#"
+        }
+      ]
+    },
+    {
+      text: "Commercial Tyres",
+      link: "#",
+      submenu: [
+        {
+          text: "All Commercial Tyres",
+          link: "#"
+        }
+      ]
+    },
+    {
+      text: "Accessories",
+      link: "#",
+    },
   ]
 
   return (
-    <nav className='order-3 md:order-2'>
+    <nav className='order-1 md:order-3'>
       <div className="md:hidden">
-        <button
-          onClick={toggleMenu}
-          className="focus:outline-none"
-        >
+        <button onClick={toggleMenu} className="focus:outline-none" >
           {/* Hamburger Icon */}
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" >
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" ></path>
@@ -47,14 +88,14 @@ const NavLinks = () => {
       </div>
       <div className={`md:flex ${isOpen ? "block" : "hidden"} w-full md:w-auto`}>
         <ul className="md:flex space-y-4 md:space-y-0 md:space-x-6 mt-4 md:mt-0">
-          {navItems?.map(item => (
-            <li className={`relative ${item.submenu ? "group" : ""}`}>
+          {navItems?.map((item, i) => (
+            <li key={i} className={`relative ${item.submenu ? "group" : ""}`}>
               <Link to={item.link}>{item.text}</Link>
               {item.submenu ? (
-                <ul className='absolute hidden group-hover:block  mt-2 py-2 w-40 rounded-lg shadow-lg'>
-                  {item.submenu.map(item => (
-                    <li>
-                      <Link to={item.link}>{item.text}</Link>
+                <ul className='absolute hidden group-hover:block p-3 w-40 rounded-lg shadow-lg border z-10 bg-white'>
+                  {item.submenu.map((item, i) => (
+                    <li key={i} className='pl-3 py-2'>
+                      <Link to={item.link} className='bold'>{item.text}</Link>
                     </li>
                   ))}
                 </ul>
@@ -62,8 +103,6 @@ const NavLinks = () => {
                 : ""}
             </li>
           ))}
-
-          
         </ul >
       </div>
     </nav>
