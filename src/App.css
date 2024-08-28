@@ -13,6 +13,22 @@
   min-height: 63px;
 }
 
+/* width */
+.imageScroll::-webkit-scrollbar, .reviewScroll::-webkit-scrollbar {
+  height: 8px;
+}
+.imageScroll::-webkit-scrollbar-track, .reviewScroll::-webkit-scrollbar-track {
+  background: #bebebe;
+  border-radius: 5px;
+}
+.imageScroll::-webkit-scrollbar-thumb, .reviewScroll::-webkit-scrollbar-thumb {
+  background: #7d7979;
+  border-radius: 5px;
+}
+.imageScroll::-webkit-scrollbar-thumb:hover, .reviewScroll::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 /* Brand logo */
 
 @keyframes slide {
@@ -75,4 +91,10 @@
   100% {
     transform: translateX(calc(-250px * 7));
   }
+}
+
+@media (max-width:768px){
+  .dealin .logos {
+    padding: 10px 0;
+}
 }

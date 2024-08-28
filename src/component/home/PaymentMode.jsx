@@ -5,7 +5,7 @@ function PaymentMode() {
   return (
     <div className="bg-white p-4 rounded-md shadow-md">
       <h2 className="text-lg font-bold mb-2">Payment Mode</h2>
-      <ul className="list-disc">
+      <ul className="list-disc grid grid-cols-2">
         <li className="flex items-center">
           <TiTick className='text-[#008000]' />
           <label>Deposit to Account</label>

@@ -29,21 +29,21 @@ const HeroSection = () => {
     }
   ]
   return (
-    <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+    <div className="bg-white p-6 rounded-lg shadow-lg">
       <div className="flex md:block">
         <div className="md:mb-12">
-          <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
+          <h1 className="text-3xl font-bold text-gray-900">
             SHREE HEMKUNT TYRES AND SERVICES
           </h1>
-          <p className="text-gray-700 dark:text-gray-300">
+          <p className="text-gray-700">
             PLOT NUMBER 69 GROUND FLOOR CISF CAMPUS ROAD, AHINSA KHAND-2 INDIRAPURAM,
             Ghaziabad, Uttar Pradesh, 201014
           </p>
-          <p className="text-gray-700 dark:text-gray-300">Open - Monday   to   Sunday - 10:00AM to 8:00PM</p>
+          <p className="text-gray-700">Open - Monday   to   Sunday - 10:00AM to 8:00PM</p>
           <button className="mt-2 w-[41%] border-2 border-[#ed1c24] text-[#ed1c24] p-1">Get Directions</button>
         </div>
         <div className="relative overflow-x-hidden">
-          <div className="flex overflow-x-scroll scroll-smooth" >
+          <div className="flex overflow-x-scroll scroll-smooth imageScroll" >
             <img src="/images/hero-shop-1.jpg" alt="CEAT Shoppe" className="w-full" />
             <img src="/images/hero-shop-2.jpg" alt="CEAT Shoppe" className="w-full" />
             <img src="/images/hero-shop-3.jpg" alt="CEAT Shoppe" className="w-full" />
@@ -52,9 +52,9 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <p className="fw-bold mb-2"><span className="count me-2">2278</span> Google Reviews</p>
+      <p className="fw-bold mb-2 mt-4"><span className="count me-2">2278</span> Google Reviews</p>
       <div className="relative overflow-x-hidden">
-        <div className="flex overflow-x-scroll scroll-smooth gap-5" >
+        <div className="flex overflow-x-scroll reviewScroll scroll-smooth gap-5" >
           {
             reviews.map((item, i) => (
               <div key={i} className="items-center border border-gray-200 rounded-lg p-4 mb-4 min-w-[33%]">

@@ -53,7 +53,7 @@ const Products = () => {
       </div>
 
       {/* Tire Items */}
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-4 gap-4 md:grid-cols-3 sm:grid-cols-2">
         {filteredTires.slice(0, visibleItems).map((tire) => (
           <div key={tire.id} className="border rounded p-4 relative overflow-hidden bg-white">
             <div className="flex justify-between items-center absolute top-0 right-0 bg-[#fff1c5] px-1 py-[2px]">

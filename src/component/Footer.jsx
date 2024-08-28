@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="pt-10 max-w-[1272px] mx-auto">
       <div className="container mx-auto px-4">
-        <div className="bg-[#FFEAAA] rounded-lg p-6 flex flex-col md:flex-row items-center justify-between">
+        <div className="bg-[#FFEAAA] rounded-lg p-6 flex sm:flex-col items-center justify-between">
           <div className="text-xl font-semibold text-gray-800">
             Have a question about Tyres?
             <div className="mt-4 md:mt-0">
@@ -22,7 +22,7 @@ const Footer = () => {
             <img src="/images/haveQuestion-bg.webp" alt="Question Icon" className="w-16 h-16 rounded-full" />
           </div>
         </div>
-        <div className="flex flex-col md:flex-row justify-between items-start text-gray-600 bg-[#ffffff] p-6 pt-8">
+        <div className="flex md:flex-col justify-between items-start text-gray-600 bg-[#ffffff] p-6 pt-8">
           <div className="flex items-center justify-between mb-4 md:mb-0">
             <div>
             <img src="/images/TP-logo.webp" alt="TyrePlex Logo" className="mb-2" />
