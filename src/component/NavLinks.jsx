@@ -78,7 +78,7 @@ const NavLinks = () => {
 
   return (
     <nav className='order-1 md:order-3'>
-      <div className="md:hidden">
+      <div className="hidden md:block">
         <button onClick={toggleMenu} className="focus:outline-none" >
           {/* Hamburger Icon */}
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" >

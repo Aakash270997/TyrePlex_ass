@@ -30,8 +30,8 @@ const HeroSection = () => {
   ]
   return (
     <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
-      <div className="flex">
-        <div className="">
+      <div className="flex md:block">
+        <div className="md:mb-12">
           <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
             SHREE HEMKUNT TYRES AND SERVICES
           </h1>
